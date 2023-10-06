@@ -1,0 +1,14 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    // For rust development
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+    // Project format settings (while editing, pre-lint/format)
+    "editorconfig.editorconfig",
+    // Dev containers, for non-linux dev envs
+    "ms-vscode-remote.remote-containers"
+  ]
+}

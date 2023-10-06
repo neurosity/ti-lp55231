@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "ti-lp55231-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile.dev"
+  },
+  "postStartCommand": ".devcontainer/postStartCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorConfig.editorConfig",
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  },
+  "remoteEnv": {
+    // Add hermit bin folder to PATH for rust-analyzer plugin to work. This is
+    // redundant for shells (terminal sessions) but required by rust-analyzer
+    // since it does not pick up env vars
+    "PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/bin"
+  }
+}

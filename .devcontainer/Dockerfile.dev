@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
+
+WORKDIR /home/vscode
+RUN echo '\nsource bin/activate-hermit' >> .bashrc
+
+CMD ["/bin/bash"]

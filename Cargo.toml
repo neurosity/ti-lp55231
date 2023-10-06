@@ -1,0 +1,16 @@
+[package]
+name = "ti-lp55231"
+version = "1.0.0"
+description = "Linux I2C driver for Texas Instruments LP55231 LED controller"
+authors = ["Bruno de Carvalho <bruno@biasedbit.com>"]
+repository = "https://github.com/neurosity/ti-lp55231/"
+homepage = "https://neurosity.co/"
+license = "MIT"
+keywords = ["lp55231", "i2c", "hal", "embedded", "led"]
+categories = ["embedded", "hardware-support"]
+edition = "2021"
+
+[dependencies]
+bitflags = "2.4.0"
+linux-embedded-hal = "0.3.2"
+scopeguard = "1.2.0"
